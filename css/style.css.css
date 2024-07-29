@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* Designed in collaboration with JeanDoe Group */
+
+/* import Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+
+/* initialisation */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	font-weight: normal;
+}
+
+html{
+/*	font-size: 120%;*/
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #1F2039;
+    color: white;
+    padding: 1rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+
+.icone{
+    display: inline;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+
+strong{
+    margin-bottom:15px ;
+}
+
+
+p{
+    letter-spacing: 1px;
+    font-size: .813rem;
+}
+
+.align-column{
+   
+    padding: 1rem;
+}
+
+.align-row{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(15rem, 1fr));
+    grid-gap:1rem;
+}
+
+
+.column{
+    /* background-color: black; */
+    padding: .5rem;
+    
+}
+.column h3{
+    color: #567;
+}
+
+
+.row i,
+.column i{
+    display: list-item;
+    text-transform: capitalize;
+    list-style: none;
+    margin: .5rem 0;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-style: normal;
+}
+
+
+.row i:hover,
+.column i:hover{
+    color: #8594f5;
+    cursor: pointer;
+}
+
+
+.row{
+    border-top: 1px solid #8594f5;
+    padding-top: 2.5rem;
+    margin-top: 30px;
+}
+
+
+.row i{
+    
+    display: inline;
+   
+    
+}
+
+
+@media screen and (max-width:996px) {
+    footer{
+        flex-wrap: wrap;
+    }
+	footer div:last-child{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width:768px) {
+    .align-row{
+        grid-template-columns: 1fr;
+    }
+}
